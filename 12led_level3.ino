@@ -121,27 +121,31 @@ void loop()
 void check()
 {
     // If-else statement to accept only one input signal
+    /* 
+    minElapsed = 250 ms
+    maxElapsed = 1000 ms
+    */
   elapsedTime = millis() - previousTime;
-  if (elapsedTime < minElapsed )  //false interrupt
+  if (elapsedTime < minElapsed )  // False interruption
   {
     return;
   }
-  if (elapsedTime >= minElapsed && elapsedTime <= maxElapsed )  //in range
+  if (elapsedTime >= minElapsed && elapsedTime <= maxElapsed )  // Effective interruption
   {
     previousTime = millis();
     timeout = 0;
-    if (inputState)               //falling
+    if (inputState)               // Falling
     {
       cleanOutput = 0;
     }
-    else                          //rising
+    else                          // Rising
     {
       cleanOutput = 1;
     }
     return;
   }
   
-  if (elapsedTime > maxElapsed )  //timeout
+  if (elapsedTime > maxElapsed )  // Timeout interruption
   {
     previousTime = millis();
     timeout = 1;
