@@ -13,5 +13,4 @@ Level 3 - Push buttons, buzzer, and 7 segment display
 
 ** For Level 3 of 12 LEDs Chaser Game, 7 segment driver CH4511 is used.
 
-Documentation Link:
-https://drive.google.com/drive/folders/10TqKR4R-m_De1yBRHJL0vlTEnC71z3L1?usp=sharing
+Documentation Link: https://docs.google.com/document/d/1WNEQdaN716BmkH7O-Ak6-H2RlMohKmiZI3KSZlzBnJ4/edit?usp=sharing
